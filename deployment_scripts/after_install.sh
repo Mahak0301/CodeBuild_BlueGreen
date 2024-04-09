@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /home/ubuntu/app
+cd /home/ubuntu/CodeBuild_BlueGreen
 npm install
