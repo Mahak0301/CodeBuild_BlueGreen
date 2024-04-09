@@ -1,5 +1,5 @@
 #!/bin/bash
-FILE=/home/ubuntu/app/index.js
+FILE=/home/ubuntu/CodeBuild_BlueGreen/index.js
 if test -f "$FILE"; then
    echo "$FILE exists"
    cd /home/ubuntu/
@@ -10,5 +10,5 @@ else
     echo "$FILE does not exist."
 fi
 cd /home/ubuntu/
-sudo rm -rf app
-sudo mkdir app
+sudo rm -rf CodeBuild_BlueGreen
+sudo mkdir CodeBuild_BlueGreen
