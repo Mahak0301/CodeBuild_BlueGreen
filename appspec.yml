@@ -2,7 +2,8 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/app
+    destination: /home/ubuntu/CodeBuild_BlueGreen
+
 hooks:
   ApplicationStop:
     - location: deployment_scripts/stop_server.sh
