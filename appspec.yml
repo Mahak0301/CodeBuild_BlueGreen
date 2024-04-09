@@ -7,7 +7,7 @@ hooks:
   ApplicationStop:
     - location: deployment_scripts/stop_server.sh
       timeout: 300
-      runas: root
+      # runas: root
       
   BeforeInstall:
     - location: deployment_scripts/before_install.sh
