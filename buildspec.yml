@@ -8,6 +8,7 @@ phases:
       - echo Logging in to Amazon ECR...
       - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 205429787317.dkr.ecr.ap-south-1.amazonaws.com
       # - REPOSITORY_URI=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME
+      - REPOSITORY_URI=msw_ecr_repo:latest 205429787317.dkr.ecr.ap-south-1.amazonaws.com/msw_ecr_repo 
   build:
     commands:
       - echo Build started on `date`
@@ -20,6 +21,6 @@ phases:
       - echo Pushing the Docker image...
       - docker push 205429787317.dkr.ecr.ap-south-1.amazonaws.com/msw_ecr_repo:latest
       - echo Writing image definitions file...
-      #- printf '[{"name":"%s","imageUri":"%s"}]' $CONTAINER_NAME $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+      - printf '[{"name":"%s","imageUri":"%s"}]' $CONTAINER_NAME $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
 artifacts:
     files: imagedefinitions.json
