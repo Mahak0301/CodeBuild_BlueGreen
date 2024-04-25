@@ -8,7 +8,7 @@ phases:
       - echo Logging in to Amazon ECR...
       - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 205429787317.dkr.ecr.ap-south-1.amazonaws.com
       # - REPOSITORY_URI=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME
-      - REPOSITORY_URI=msw_ecr_repo:latest 205429787317.dkr.ecr.ap-south-1.amazonaws.com/msw_ecr_repo 
+      - REPOSITORY_URI=205429787317.dkr.ecr.ap-south-1.amazonaws.com/msw_ecr_repo 
   build:
     commands:
       - echo Build started on `date`
