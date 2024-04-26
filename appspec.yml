@@ -2,8 +2,8 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /opt/codedeploy-agent/CodeBuild_BlueGreen
-    # destination: /home/ubuntu/CodeBuild_BlueGreen
+    # destination: /opt/codedeploy-agent/CodeBuild_BlueGreen
+    destination: /home/ubuntu/CodeBuild_BlueGreen
 
 hooks:
   ApplicationStop:
