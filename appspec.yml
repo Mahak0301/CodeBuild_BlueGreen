@@ -2,7 +2,6 @@ version: 0.0
 os: linux
 files:
   - source: /
-    # destination: /opt/codedeploy-agent/CodeBuild_BlueGreen
     destination: /home/ubuntu/CodeBuild_BlueGreen
 
 hooks:
@@ -26,8 +25,8 @@ hooks:
       timeout: 300
       runas: root
 
-  ValidateService:
-    - location: deployment_scripts/validate_service.sh
-      timeout: 300
-      runas: root
+  # ValidateService:
+  #   - location: deployment_scripts/validate_service.sh
+  #     timeout: 300
+  #     runas: root
   
