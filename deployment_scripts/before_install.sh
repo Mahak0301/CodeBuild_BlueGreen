@@ -1,4 +1,4 @@
-## !/bin/bash
+#!/bin/bash
 # FILE=/home/ubuntu/CodeBuild_BlueGreen/index.js
 # if test -f "$FILE"; then
 #    echo "$FILE exists"
@@ -26,3 +26,6 @@
 #   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 # sudo apt-get update
 # sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 205429787317.dkr.ecr.ap-south-1.amazonaws.com
+docker pull 205429787317.dkr.ecr.ap-south-1.amazonaws.com/msw_ecr_repo:latest
+docker run -itd -p 3000:3000 205429787317.dkr.ecr.ap-south-1.amazonaws.com/msw_ecr_repo
