@@ -1,5 +1,5 @@
 #!/bin/bash
-# cd /home/ubuntu/CodeBuild_BlueGreen
+cd /home/ubuntu/CodeBuild_BlueGreen
 # sudo pm2 start index.js -f
 
 aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 205429787317.dkr.ecr.ap-south-1.amazonaws.com
