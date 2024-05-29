@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /opt/CodeBuild_BlueGreen
+    destination: /opt/CodeBuild_BlueGreen/
 
 hooks:
   ApplicationStop:
