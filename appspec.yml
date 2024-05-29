@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
-# files:
-#   - source: /
-#     destination: /home/ubuntu/CodeBuild_BlueGreen
+files:
+  - source: /
+    destination: /opt/CodeBuild_BlueGreen
 
 hooks:
   ApplicationStop:
