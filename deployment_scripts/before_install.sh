@@ -9,7 +9,7 @@
 # else 
 #     echo "$FILE does not exist."
 # fi
-cd /home/ubuntu/CodeBuild_BlueGreen
+# cd /home/ubuntu/CodeBuild_BlueGreen
 # sudo rm -rf CodeBuild_BlueGreen
 # sudo mkdir CodeBuild_BlueGreen
 # Add Docker's official GPG key:
