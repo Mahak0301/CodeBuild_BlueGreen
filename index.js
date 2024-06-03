@@ -18,11 +18,12 @@ app.get('/', (req, res) => {
         }
         h1 {
           font-size: 3em; 
+          color: white;
         }
       </style>
     </head>
     <body>
-      <h1>Version1</h1>
+      <h1>Version 2</h1>
     </body>
     </html>
   `);
