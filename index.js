@@ -11,10 +11,10 @@ app.get('/', (req, res) => {
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Version1</title>
+      <title>Version2</title>
       <style>
         body {
-          background-color: skyblue; /* Background color set to sky blue */
+          background-color: lightgreen; /* Background color set to sky blue */
         }
         h1 {
           font-size: 3em; /* Heading font size set to 3em */
@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
       </style>
     </head>
     <body>
-      <center><h1>Version 1</h1></center>
+      <center><h1>Version 2</h1></center>
     </body>
     </html>
   `);
