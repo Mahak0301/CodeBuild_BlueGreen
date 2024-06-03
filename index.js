@@ -14,12 +14,15 @@ app.get('/', (req, res) => {
       <title>Version1</title>
       <style>
         body {
-          background-color: green;
+          background-color: blue;
+        }
+        h1 {
+          font-size: 3em; 
         }
       </style>
     </head>
     <body>
-      Version1
+      <h1>Version1</h1>
     </body>
     </html>
   `);
