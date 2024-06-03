@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
       <title>Version1</title>
       <style>
         body {
-          background-color: blue;
+          background-color: green;
         }
         h1 {
           font-size: 3em; 
